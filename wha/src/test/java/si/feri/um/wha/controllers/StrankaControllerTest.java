@@ -53,7 +53,7 @@ public class StrankaControllerTest {
 
         mockMvc.perform(get("/stranka"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].naziv").value("Podjetje"))
+                .andExpect(jsonPath("$[0].naziv").value("Podjetje123"))
                 .andExpect(jsonPath("$[0].telefon").value("123456789"));
 
         verify(strankaDao, times(1)).findAll();
