@@ -26,7 +26,7 @@ jobs:
       - name: Run Tests with Maven
         env:
           SPRING_PROFILES_ACTIVE: dev # Set the Spring profile to 'dev' for tests
-        run: mvn test
+        run: mvn test --file wha/pom.xml
 
       - name: Package and Create JAR
         run: mvn -B package

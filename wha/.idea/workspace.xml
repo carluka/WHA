@@ -48,6 +48,10 @@
   "keyToString": {
     "Application.WHA.executor": "Run",
     "JUnit.StrankaControllerTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.WhaApplication.executor": "Run",
@@ -119,7 +123,7 @@
       <workItem from="1728832271197" duration="1671000" />
       <workItem from="1728906895951" duration="312000" />
       <workItem from="1729509054005" duration="2008000" />
-      <workItem from="1729521791719" duration="2594000" />
+      <workItem from="1729521791719" duration="2898000" />
     </task>
     <task id="LOCAL-00001" summary="Znova ustvarjen git projekt">
       <created>1702906803638</created>
