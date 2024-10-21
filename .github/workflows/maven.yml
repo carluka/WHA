@@ -30,12 +30,3 @@ jobs:
 
       - name: Package and Create JAR
         run: mvn -B package
-
-      # Use the updated action version to avoid deprecated Node.js warning
-      - name: Upload Test Results
-        if: always() # Always upload the results, even if tests fail
-        uses: actions/upload-artifact@v4 # Updated from v3 to v4
-        with:
-          name: test-results
-          path: target/surefire-reports # Maven stores test reports here
-          if-no-files-found: warn # Avoid failure if no reports are found
