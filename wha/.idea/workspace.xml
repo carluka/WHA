@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd434cf2-e57e-4cbb-ae2e-d810ebb65cf4" name="Changes" comment="Enum stanje narocila" />
+    <list default="true" id="bd434cf2-e57e-4cbb-ae2e-d810ebb65cf4" name="Changes" comment="Enum stanje narocila">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +122,7 @@
       <workItem from="1728832271197" duration="1671000" />
       <workItem from="1728906895951" duration="312000" />
       <workItem from="1729509054005" duration="2008000" />
-      <workItem from="1729521791719" duration="1186000" />
+      <workItem from="1729521791719" duration="2138000" />
     </task>
     <task id="LOCAL-00001" summary="Znova ustvarjen git projekt">
       <created>1702906803638</created>
