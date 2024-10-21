@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd434cf2-e57e-4cbb-ae2e-d810ebb65cf4" name="Changes" comment="Enum stanje narocila">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-mysql.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Frontend/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/frontend/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/si/feri/um/wha/controllers/StrankaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/si/feri/um/wha/controllers/StrankaControllerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="bd434cf2-e57e-4cbb-ae2e-d810ebb65cf4" name="Changes" comment="Enum stanje narocila" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +119,7 @@
       <workItem from="1728832271197" duration="1671000" />
       <workItem from="1728906895951" duration="312000" />
       <workItem from="1729509054005" duration="2008000" />
-      <workItem from="1729521791719" duration="863000" />
+      <workItem from="1729521791719" duration="1186000" />
     </task>
     <task id="LOCAL-00001" summary="Znova ustvarjen git projekt">
       <created>1702906803638</created>
