@@ -10,6 +10,7 @@ class WhaApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }
