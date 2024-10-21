@@ -29,4 +29,4 @@ jobs:
         run: mvn test --file wha/pom.xml
 
       - name: Package and Create JAR
-        run: mvn -B package
+        run: mvn -B package --file wha/pom.xml
