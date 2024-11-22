@@ -1,7 +1,7 @@
 # WAREHOUSE ASSISTANT
 
 ## O "WHA"
-**WHA** je spletna aplikacija namenjena za oskrbo skladišč. V njej lahko dodjaš zalogo ter nadzoruješ delovni čas delavcev. 
+**WHA** je spletna aplikacija, zasnovana za učinkovito upravljanje skladiščnih procesov. Ponuja celovite rešitve za dodajanje in spremljanje zaloge izdelkov, optimizirano pripravo in ustvarjanje naročil, avtomatizirano naročanje manjkajočih artiklov ter vodenje natančne evidence o zaposlenih. Aplikacija zagotavlja preglednost, izboljšuje organizacijo skladišča in omogoča boljšo produktivnost.
 
 ## ČLANI EKIPE:
  - Aljaž Kodrič (https://github.com/HlapecMihad)
