@@ -35,24 +35,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B -f wha/pom.xml verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=carluka_WHA
-      # --- Frontend analiza ---
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16' # Ali različica, ki jo uporablja vaš projekt
-
-      - name: Install frontend dependencies
-        working-directory: ./Frontend/frontend
-        run: npm install
-      
-      - name: Run SonarQube analysis for frontend
-        working-directory: ./Frontend/frontend
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          npx sonar-scanner \
-            -Dsonar.projectKey=carluka_WHA \
-            -Dsonar.organization=carluka \
-            -Dsonar.sources=src \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.token=${SONAR_TOKEN}
