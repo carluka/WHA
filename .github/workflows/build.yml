@@ -40,10 +40,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           run: mvn -B -f wha/pom.xml verify org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar \
-                -Dsonar.projectKey=carluka_WHA \
-                -Dsonar.sources=wha/src \
-                -Dsonar.host.url=https://sonarcloud.io \
-                -Dsonar.token=${SONAR_TOKEN}
+              -Dsonar.projectKey=carluka_WHA \
+              -Dsonar.sources=wha/src \
+              -Dsonar.host.url=https://sonarcloud.io \
+              -Dsonar.token=${SONAR_TOKEN}
 
 
       # Frontend analiza
