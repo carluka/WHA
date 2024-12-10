@@ -14,42 +14,47 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for better relevancy of analysis
 
-      # --- Backend analiza ---
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: 17
           distribution: 'zulu'
+
       - name: Cache SonarQube packages
         uses: actions/cache@v4
         with:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
+
       - name: Cache Maven packages
         uses: actions/cache@v4
         with:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+
+      # Backend analiza
       - name: Build and analyze backend
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B -f wha/pom.xml verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.projectKey=carluka_WHA \
-            -Dsonar.sources=src/main/java \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+          -Dsonar.projectKey=carluka_WHA \
+          -Dsonar.sources=wha/src \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.token=${SONAR_TOKEN}
 
-      # --- Frontend analiza ---
+      # Frontend analiza
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
+
       - name: Install frontend dependencies
         working-directory: ./Frontend/frontend
         run: npm install
+
       - name: Run SonarQube analysis for frontend
         working-directory: ./Frontend/frontend
         env:
@@ -60,4 +65,6 @@ jobs:
             -Dsonar.organization=carluka \
             -Dsonar.sources=src \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.token=${SONAR_TOKEN}
+            -Dsonar.token=${SONAR_TOKEN} \
+            -Dsonar.branch.name=main \
+            -Dsonar.working.directory=.scannerwork
