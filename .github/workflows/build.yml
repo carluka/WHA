@@ -51,7 +51,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           npx sonar-scanner \
-            -Dsonar.projectKey=carluka_WHA_frontend \
+            -Dsonar.projectKey=carluka_WHA \
             -Dsonar.organization=carluka \
             -Dsonar.sources=src \
             -Dsonar.host.url=https://sonarcloud.io \
