@@ -33,11 +33,10 @@ jobs:
       - name: Build backend
         run: mvn -B -f wha/pom.xml clean verify
 
-      # --- Frontend setup ---
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Ali različica, ki jo uporablja vaš projekt
+          node-version: '16' 
 
       - name: Install frontend dependencies
         working-directory: ./Frontend/frontend
